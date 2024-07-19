@@ -1,6 +1,6 @@
 module "network_workspace" {
   source  = "pogosoftware/tfe/tfe//modules/workspace"
-  version = "3.0.1"
+  version = "3.0.2"
 
   create_workspace           = true
   name                       = local.network_workspace_name
@@ -20,7 +20,7 @@ module "network_workspace" {
 
 module "kubernetes_workspace" {
   source  = "pogosoftware/tfe/tfe//modules/workspace"
-  version = "3.0.1"
+  version = "3.0.2"
 
   create_workspace           = true
   name                       = local.kubernetes_workspace_name
@@ -44,7 +44,7 @@ module "kubernetes_workspace" {
 
 module "apps_workspace" {
   source  = "pogosoftware/tfe/tfe//modules/workspace"
-  version = "3.0.1"
+  version = "3.0.2"
 
   create_workspace           = true
   name                       = local.apps_workspace_name
@@ -67,7 +67,7 @@ module "apps_workspace" {
 ####################################################################################################
 module "digitalocean_variable_set" {
   source  = "pogosoftware/tfe/tfe//modules/variable-set"
-  version = "3.0.1"
+  version = "3.0.2"
 
   name = format("%s - %s - DigitalOcean credentials", var.project, local.environment)
 
@@ -87,7 +87,7 @@ module "digitalocean_variable_set" {
 
 module "bootstrap_variable_set" {
   source  = "pogosoftware/tfe/tfe//modules/variable-set"
-  version = "3.0.1"
+  version = "3.0.2"
 
   name = format("%s - %s - Bootstrap workspace name", var.project, local.environment)
 
@@ -110,7 +110,7 @@ module "bootstrap_variable_set" {
 
 module "common_variable_set" {
   source  = "pogosoftware/tfe/tfe//modules/variable-set"
-  version = "3.0.1"
+  version = "3.0.2"
 
   name = format("%s - %s - common", var.project, local.environment)
 
