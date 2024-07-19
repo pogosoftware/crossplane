@@ -57,7 +57,7 @@ variable "k8s_node_pool_size" {
 }
 
 variable "k8s_node_pool_count" {
-  default     = 1
+  default     = 3
   description = "The number of Kubernetes nodes"
   type        = number
 }
